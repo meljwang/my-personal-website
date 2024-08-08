@@ -19,8 +19,6 @@ const AppRouter = () => {
 
   return (
     <div style={{ paddingTop: "70px" }}>
-      {" "}
-      {/* Adjust this value based on your navbar height */}
       <NavBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

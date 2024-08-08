@@ -10,7 +10,7 @@ function NavBar() {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-center z-50">
+    <div className="fixed top-0 left-0 right-0 flex justify-center z-50 mt-7">
       <div className="w-full px-4">
         <Navbar
           fluid

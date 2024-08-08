@@ -17,7 +17,7 @@ const MainPage = () => {
   return (
     <div
       className="intro_sec flex flex-col items-center justify-center min-h-screen"
-      style={{ paddingTop: "100px" }}
+      style={{ paddingTop: "50px" }}
     >
       <div className="text h-full flex flex-col items-center justify-center text-center">
         <div className="intro mx-auto">

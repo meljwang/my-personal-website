@@ -69,25 +69,21 @@ const AboutMePage = () => {
             </h1>
             <div className="text-xl font-semibold text-gray-600 dark:text-gray-300 mb-12">
               <p className="mb-6">
-                I'm a Penultimate Year Business Analytics Undergraduate with a
+                I'm a Penultimate Year Business Analytics undergraduate with a
                 second major in Statistics at the National University of
-                Singapore (NUS) and specialising in Machine Learning-based
+                Singapore (NUS), specialising in Machine Learning-based
                 Analytics. I have a deep interest in leveraging technology to
                 solve real-world problems and make a positive impact.
               </p>
               <p className="mb-6">
-                My interest in technology extends to web development and cloud
+                My passion for technology extends to web development and cloud
                 computing, where I enjoy building and deploying applications
-                that are both innovative and efficient. Additionally, I have a
-                keen interest in working in the technology division within the
-                finance sector, leveraging my skills to create solutions that
-                enhance financial services and operations.
+                that are both innovative and efficient.
               </p>
               <p className="mb-6">
-                In my free time, I love to stay active and challenge myself with
-                runs. I enjoy traveling and exploring new places, which allows
-                me to immerse myself in different cultures and broaden my
-                perspective about the world.
+                In my free time, I love staying active and challenging myself
+                with runs. I also enjoy travelling, exploring new places and
+                immersing myself in different cultures around the world.
               </p>
             </div>
             <div className="text-xl font-semibold text-gray-600 dark:text-gray-300 mb-12">
