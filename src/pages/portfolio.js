@@ -12,14 +12,14 @@ const introdata = {
     third: "Enjoys Travelling & Adventures.",
   },
   description:
-    "Year 3 Business Analytics Undergraduate At the National University of Singapore.",
+    "Year 3 Business Analytics Undergraduate at National University of Singapore",
   your_img_url: "",
 };
 
 const dataabout = {
   title: "A Bit About Myself",
   aboutme:
-    "Hello! I'm Melvin Ang, a penultimate Business Analytics undergraduate at the National University of Singapore. I'm passionate about machine learning, cloud computing, and leveraging technology to solve real-world problems. My goal is to become a software engineer and continue exploring the exciting intersection of technology and finance.",
+    "Hello! I'm Melvin Ang, a penultimate Business Analytics undergraduate at National University of Singapore. I'm passionate about machine learning, cloud computing, and leveraging technology to solve real-world problems. My goal is to become a software engineer and continue exploring the exciting intersection of technology and finance.",
 };
 
 const worktimeline = [

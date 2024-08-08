@@ -1,21 +1,16 @@
 import React from "react";
-import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import MainPage from "./pages/MainPage/MainPage"; // Ensure this path is correct
-import NavBar from "./components/NavBar"; // Ensure this path is correct
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from "./routes/AppRouter";
+import Footnote from "./components/Footnote";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <NavBar />
-      <Router>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          {/* Add other routes here as needed */}
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <div className="scroll-container">
+        <AppRouter />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
