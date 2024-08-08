@@ -1,43 +1,53 @@
 import React from "react";
 import { Navbar } from "flowbite-react";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
   return (
     <div className="fixed top-0 left-0 right-0 flex justify-center z-50">
-      <div className="max-w-screen-md w-full mx-auto p-4">
-        <Navbar fluid rounded className="bg-black p-3 rounded-full w-full">
+      <div className="w-full px-4">
+        <Navbar
+          fluid
+          rounded
+          className="bg-black p-3 rounded-full w-full max-w-lg mx-auto"
+        >
           <Navbar.Brand
             href="https://flowbite-react.com"
             className="text-white"
           >
-            {/* Add logo or brand name here if needed */}
           </Navbar.Brand>
           <div className="flex mx-auto">
-            <ul className="flex flex-col items-center justify-center w-full md:flex-row md:space-x-8 md:text-sm md:font-medium">
+            <ul className="flex flex-row items-center justify-center w-full space-x-4 text-sm font-medium">
               <li>
-                <a
-                  href="/home"
-                  className="block py-2 px-4 text-white hover:bg-gray-700 rounded-full md:bg-transparent md:hover:text-gray-300"
+                <button
+                  onClick={() => handleNavigation("/")}
+                  className="block py-2 px-4 text-white hover:bg-gray-700 rounded-full bg-transparent hover:text-gray-300"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="/aboutme"
-                  className="block py-2 px-4 text-white hover:bg-gray-700 rounded-full md:bg-transparent md:hover:text-gray-300"
+                <button
+                  onClick={() => handleNavigation("/aboutme")}
+                  className="block py-2 px-4 text-white hover:bg-gray-700 rounded-full bg-transparent hover:text-gray-300"
                 >
                   About Me
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="projects"
-                  className="block py-2 px-4 text-white hover:bg-gray-700 rounded-full md:bg-transparent md:hover:text-gray-300"
+                <button
+                  onClick={() => handleNavigation("/projects")}
+                  className="block py-2 px-4 text-white hover:bg-gray-700 rounded-full bg-transparent hover:text-gray-300"
                 >
                   Projects
-                </a>
+                </button>
               </li>
             </ul>
           </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import { introdata } from "../portfolio.js";
 import profilePicture from "../../assets/profilepicture.png";
-import { Button } from "flowbite-react";
+import { Button, Label } from "flowbite-react";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 import Footnote from "../../components/Footnote.js";
@@ -15,11 +15,14 @@ const MainPage = () => {
   };
 
   return (
-    <div className="intro_sec flex flex-col items-center justify-center min-h-screen">
+    <div
+      className="intro_sec flex flex-col items-center justify-center min-h-screen"
+      style={{ paddingTop: "100px" }}
+    >
       <div className="text h-full flex flex-col items-center justify-center text-center">
         <div className="intro mx-auto">
           <div className="mb-8 flex justify-center">
-            <div className="rounded-full overflow-hidden w-56 h-56">
+            <div className="rounded-full overflow-hidden w-36 h-36 sm:w-56 sm:h-56">
               <img
                 src={profilePicture}
                 alt="Profile"
@@ -27,10 +30,10 @@ const MainPage = () => {
               />
             </div>
           </div>
-          <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-600 mb-4">
             Melvin Ang
           </h1>
-          <div className="text-3xl font-semibold text-gray-700 mb-6">
+          <div className="text-2xl sm:text-3xl font-semibold text-gray-600 mb-6">
             <Typewriter
               options={{
                 strings: [
@@ -44,7 +47,9 @@ const MainPage = () => {
               }}
             />
           </div>
-          <p className="mt-6 text-2xl text-gray-600">{introdata.description}</p>
+          <p className="mt-6 text-xl sm:text-2xl text-gray-600">
+            {introdata.description}
+          </p>
           <div className="flex justify-center mt-6">
             <motion.div
               className="box"
